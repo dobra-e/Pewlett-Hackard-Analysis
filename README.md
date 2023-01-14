@@ -10,7 +10,7 @@ To prepare for an expected wave of retirements, Pewlett Hackard (PH) has request
 * Approximately 1,550 employees are eligible for mentorship. 
 * There are far more retirees (72,458) than there are mentorship-eligible employees (1,550) to fill their roles.
 
-![Retirees by Title](/Data/unique_titles.csv)
+![Retirees by Title](/Graphics/Retires by Title.png)
 
 ## Summary
 ### Total Roles to be Filled
@@ -42,6 +42,7 @@ FROM retirees_department
 GROUP BY dept_name
 ORDER BY count DESC
 ```
+![Retirees by Title](/Graphics/Retires by Department.png)
 
 This can be taken one step further to show the expected retirees by title, by department. 
 ```
