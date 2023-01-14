@@ -44,12 +44,13 @@ ORDER BY count DESC
 ```
 ![Retirees by Title](/Graphics/RetireesDepartment.png)
 
-This can be taken one step further to show the expected retirees by title, by department. 
+This can be taken one step further to show the expected retirees by title, by department. A snippet of the resulting table is shown below.
 ```
 SELECT COUNT(dept_name), dept_name, title
 FROM retirees_department
 GROUP BY dept_name, title
 ORDER BY dept_name, count DESC
 ```
+![Retirees by Title](/Graphics/RetireesDepartmentsTitle.png)
 
 With these tables, it is evident that the Development and Production departments are expecting the largest number of retirees. Within both departments, Senior Engineers make up the largest group of retirees.
